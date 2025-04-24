@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html> <!-- Opens the HTML document -->
+<head> 
+  <title>Email Body Input</title> 
+  <style>
+    body { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      margin: 0; 
+      font-family: Arial, sans-serif; 
+      background-color: #eef2f5; 
+    }
+
+    form { 
+      text-align: center; 
+      padding: 30px; 
+      border: 1px solid #ccc; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+      background-color: #f9f9f9; 
+    }
+
+    h2 {
+      margin-top: 0; }
+
+    textarea { 
+      font-size: 16px; 
+      padding: 10px; 
+      width: 100%; 
+      max-width: 500px; 
+      box-sizing: border-box; 
+    }
+
+    button { 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      cursor: pointer; 
+      background-color: #4CAF50; 
+      color: white; 
+      border: none; 
+      border-radius: 6px; 
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover { 
+      background-color: #45a049; 
+    }
+  </style> 
+</head>
+<body> <!-- Start of the body section -->
+  
+  <form action="/submit" method="post"> <!-- Start of the form, action specifies the form submission URL, method is POST -->
+    <h2>Email2jsonformat converter</h2> <!-- Heading for the form -->
+    <label for="input_email_body">Email Body:</label><br> <!-- Label for the textarea -->
+    <textarea name="input_email_body" id="input_email_body" rows="6" cols="60" placeholder="Enter your email here..." required></textarea><br><br> <!-- Textarea for the email body input -->
+    <button type="submit">Convert to JSON_format</button> <!-- Submit button for the form -->
+  </form> <!-- End of the form -->
+
+</body> <!-- End of the body section -->
+</html> <!-- End of the HTML document -->
